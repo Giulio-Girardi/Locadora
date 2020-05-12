@@ -2,11 +2,11 @@ import java.util.Vector;
 
 public class Categoria {
 	
-	protected String nomeCategoria;
+	protected String nome;
 	protected Vector<Automovel> nomeAuto;
 	
-	Categoria(String nomeCategoria){
-		this.nomeCategoria = nomeCategoria;
+	Categoria(String nome){
+		this.nome = nome;
 		nomeAuto = new Vector<Automovel>();
 	}
 	
@@ -15,9 +15,9 @@ public class Categoria {
 	}
 	
 	public String getNomeCategoria() {
-		return nomeCategoria;
+		return nome;
 	}
 	public void setNomeCategoria(String nomeCategoria) {
-		this.nomeCategoria = nomeCategoria;
+		this.nome = nomeCategoria;
 	}
 }

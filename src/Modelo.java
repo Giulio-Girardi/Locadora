@@ -1,18 +1,27 @@
 
-public class Modelo{
+public class Modelo {
 	
-	protected String nomeModelo;
+	private String nome;
+
+	private Marca marca;
 	
-	public Modelo(String nomeModelo) {
-		
-		this.nomeModelo = nomeModelo;
+	public Modelo(String nome) {
+		this.nome = nome;
 	}
 	
-	public String getNomeModelo() {
-		return nomeModelo;
+	public String getNome() {
+		return nome;
 	}
-	public void setNomeModelo(String nomeModelo) {
-		this.nomeModelo = nomeModelo;
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Marca getMarca() {
+		return marca;
+	}
+
+	public void setMarca(Marca marca) {
+		this.marca = marca;
 	}
 
 }

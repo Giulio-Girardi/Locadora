@@ -1,17 +1,16 @@
 
 public class Marca {
 	
-	protected String nomeMarca;
+	protected String nome;
 	
-	
-	Marca(String nomeMarca){
-		this.nomeMarca = nomeMarca;
+	Marca(String nome) {
+		this.nome = nome;
 	}
 	
-	public String getNomeMarca() {
-		return nomeMarca;
+	public String getNome() {
+		return nome;
 	}
-	public void setNomeMarca(String nomeMarca) {
-		this.nomeMarca = nomeMarca;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 }

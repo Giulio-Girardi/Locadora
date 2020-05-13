@@ -22,6 +22,7 @@ public class Automovel {
     return valorBase;
   }
 
+  
 
   public double getValorDiaria() {
     return valorDiaria;

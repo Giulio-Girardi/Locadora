@@ -1,3 +1,4 @@
+import java.util.Iterator;
 import java.util.Vector;
 
 public class Cadastro {
@@ -16,6 +17,32 @@ public class Cadastro {
 	
 	public void cadastraCliente(Cliente novo) {
 		clientes.add(novo);
+	}
+	
+	public void getClientes() {
+		Iterator<Cliente> cliIterator = clientes.iterator();
+		while(cliIterator.hasNext()) {
+			System.out.println(cliIterator.next().nome);
+		}
+	}
+	
+	public void getModelos() {
+		Iterator<Modelo> modIterator = modelos.iterator();
+		while(modIterator.hasNext()) {
+			System.out.println(modIterator.next().getNome());
+		}
+	}
+	
+	public void getCategorias() {
+		Iterator<Categoria> catIterator = categorias.iterator();
+		while(catIterator.hasNext()) {
+			Vector<Automovel> listAutomovel = catIterator.next().auto;
+			Iterator<Automovel> listAutomovelIterator = listAutomovel.iterator();
+			while(listAutomovelIterator.hasNext()){
+			
+				System.out.println(listAutomovelIterator.next().getModeloAutomovel().getNome());
+			}
+		}
 	}
 	
 	public void cadastraCategoria(Categoria nova) {

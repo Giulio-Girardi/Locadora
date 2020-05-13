@@ -90,6 +90,15 @@ public class Application {
 		cadastro.cadastraCategoria(hatch);
 		cadastro.cadastraCategoria(suv);
 		
+		/***********
+		 * Consulta de clientes e modelos
+		 **********/
+		
+		
+		cadastro.getClientes();
+		cadastro.getModelos();
+		cadastro.getCategorias();
+		
 //		System.out.println(fuca.getValorFixo());
 //		System.out.println(meuUno.getValorFixo());
 //		System.out.println(meuCompass.getValorFixo());

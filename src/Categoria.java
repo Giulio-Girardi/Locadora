@@ -3,15 +3,15 @@ import java.util.Vector;
 public class Categoria {
 	
 	protected String nome;
-	protected Vector<Automovel> nomeAuto;
+	protected Vector<Automovel> auto;
 	
 	Categoria(String nome){
 		this.nome = nome;
-		nomeAuto = new Vector<Automovel>();
+		auto = new Vector<Automovel>();
 	}
 	
 	public void InsereAutomovel(Automovel auto) {
-		nomeAuto.add(auto);
+		this.auto.add(auto);
 	}
 	
 	public String getNomeCategoria() {
